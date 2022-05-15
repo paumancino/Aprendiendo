@@ -1,0 +1,33 @@
+document.write("<h1>¡Hola pomponcito!</h1>");
+//tipos de datos
+"Soy un string" // String = cadena y significa cadena de caracteres, tambien se pueden usar comillas simples
+//booleano
+true
+false
+//number
+12323
+-2,34
+//arreglo o array es una lista de cosas, usuarios,strings, numeros, booleanos, etc. 
+["pepito", "juancito", "luisito"]
+
+//objecto u object es una representacion abstracta de un objeto en la vida real, por ejemplo si se quiere guardar un usuario de un banco de mi aplicacion y quiero almacenar los datos de este usuario
+{
+    "username": "juancito",
+    "dinero": 45.0000,
+    "estado": true,
+
+}
+
+//Variables
+
+var nombredelusuario = "Juancito"; (tambien se puede usar let en vez de var)
+console.log(nombredelusario);
+
+Las variables se llaman asi porque guardan datos que pueden como dice su nombre variar
+Si se quisiera guardar datos que se mantienen constantes en el tiempo como por ej
+el numero PI, se usa const
+
+const PI=3,1415
+
+Para nombrar variables se suele usar camel case que consiste en poner la primera palabra en minuscula y el comienzo de las siguientes en mayuscula, tal que asi
+soyUnaVariable.
