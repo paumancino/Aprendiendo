@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    cursor: url("./img/patita.png");
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem 0rem;
+    position: relative;
+    margin-top: 150px;
+}
+
+img {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    z-index: 1; 
+}
+
+.form__cat {
+    border: 1px solid rgb(220, 186, 223);
+    border-radius: 20px;
+    padding: 2em;
+}
+
+.form__cat input {
+    border: 1px solid rgb(213, 153, 231);
+    border-radius: 1.25rem;
+    padding: 1rem;
+    background-color: rgb(43, 43, 43);
+    color: rgb(213, 153, 231);
+}
+
+.form__cat input::placeholder {
+    color: rgb(213, 153, 231, 0.5);
+}
+
+.form__cat input:focus,
+.form__cat input:active {
+    border-color: rgb(4, 80, 80);
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(43, 43, 43);
+        color: rgb(248, 190, 238);
+    }
+}
