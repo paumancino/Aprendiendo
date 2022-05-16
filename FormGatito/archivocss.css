@@ -4,10 +4,6 @@
     padding: 0px;
 }
 
-html {
-    cursor: url("./img/patita.png");
-}
-
 body {
     width: 100vw;
     height: 100vh;
@@ -16,6 +12,12 @@ body {
     align-items: center;
     flex-direction: column;
     padding: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--background-color);
+}
+
+.titulo {
+    color: var(--color-tittle);
 }
 
 form {
@@ -28,6 +30,30 @@ form {
     margin-top: 150px;
 }
 
+.form__cat {
+    border: 3px solid var(--color-tittle);
+    border-radius: 20px;
+    padding: 2em;
+    box-shadow: 10px 5px rgb(222, 176, 219);
+}
+
+.form__cat input {
+    border: 1px solid var(--color-tittle);
+    border-radius: 1.25rem;
+    padding: 1rem;
+    background-color: var(--background-color);
+    color: var(--color-letter-input);
+}
+
+.form__cat input::placeholder {
+    color: var(--color-tittle);
+}
+
+.form__cat input:focus,
+.form__cat input:active {
+    border-color: var(--color-tittle);
+}
+
 img {
     position: absolute;
     top: 100px;
@@ -35,35 +61,41 @@ img {
     transform: translateX(-50%);
     width: 150px;
     height: 150px;
-    z-index: 1; 
-}
-
-.form__cat {
-    border: 1px solid rgb(220, 186, 223);
-    border-radius: 20px;
-    padding: 2em;
-}
-
-.form__cat input {
-    border: 1px solid rgb(213, 153, 231);
-    border-radius: 1.25rem;
-    padding: 1rem;
-    background-color: rgb(43, 43, 43);
-    color: rgb(213, 153, 231);
-}
-
-.form__cat input::placeholder {
-    color: rgb(213, 153, 231, 0.5);
-}
-
-.form__cat input:focus,
-.form__cat input:active {
-    border-color: rgb(4, 80, 80);
+    z-index: 1;
+    filter: var(--filter-photo);
 }
 
 @media (prefers-color-scheme: dark) {
+
     body {
-        background-color: rgb(43, 43, 43);
-        color: rgb(248, 190, 238);
+        --background-color: rgb(43, 43, 43);
+        --color-letter-input: rgb(248, 190, 238);
+        --color-tittle: rgb(218, 123, 247);
+        --filter-photo: sepia(50);
     }
+}
+
+@media (prefers-color-scheme: light) {
+
+    body {
+        --background-color: rgb(255, 255, 255);
+        --color-letter-input: rgb(151, 0, 126);
+        --color-tittle: rgb(191, 104, 217);
+    }
+}
+
+/* Estilar botoncito */
+
+.form__cat button {
+    padding: 10px 20px;
+    margin-top: 30px;
+    border-radius: 15px;
+    border: 2px solid rgb(226, 95, 222);
+    background-color: pink;
+}
+
+.form__cat button:active {
+    background-color: rgb(237, 68, 225);
+    box-shadow: 0 5px rgb(215, 179, 235);
+    transform: translateY(4px);
 }
