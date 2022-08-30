@@ -1,0 +1,8 @@
+/** 
+1 -> Crear un arreglo de enteros con una longitud de 20.
+2 -> Crear un segundo arreglo de strings con una longitud de 10.
+3 -> Crear un tercer arreglo, combinando los dos anteriores (1 y 2)
+4 -> Crear un cuarto arreglo, que contenga los elementos de (3), con las siguentes condiciones:
+  a) Para los elementos de tipo number, multiplicarlos por un numero aleatorio entre 1 y 10.
+  b) Para los elementos de tipo string, al inicio agregarles '(' y al final ')'.
+*/
